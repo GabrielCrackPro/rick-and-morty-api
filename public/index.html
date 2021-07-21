@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css"
+      integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="  https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a46868a6-3de3-4c82-b291-dcc524c1a7a7/d9mxrw7-a76a3243-56ed-4314-8dcd-ded2078dc26b.png/v1/fill/w_1024,h_1186,q_75,strp/rick_face_by_kushmastafresh-d9mxrw7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hNDY4NjhhNi0zZGUzLTRjODItYjI5MS1kY2M1MjRjMWE3YTcvZDlteHJ3Ny1hNzZhMzI0My01NmVkLTQzMTQtOGRjZC1kZWQyMDc4ZGMyNmIucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTExODYifV1dfQ.GLT_W4ioLbl4M2nMIZYgjx0eQLnREfp6Ty7eQhPLbG0"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rick And Morty API</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a46868a6-3de3-4c82-b291-dcc524c1a7a7/d9mxrw7-a76a3243-56ed-4314-8dcd-ded2078dc26b.png/v1/fill/w_1024,h_1186,q_75,strp/rick_face_by_kushmastafresh-d9mxrw7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hNDY4NjhhNi0zZGUzLTRjODItYjI5MS1kY2M1MjRjMWE3YTcvZDlteHJ3Ny1hNzZhMzI0My01NmVkLTQzMTQtOGRjZC1kZWQyMDc4ZGMyNmIucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTExODYifV1dfQ.GLT_W4ioLbl4M2nMIZYgjx0eQLnREfp6Ty7eQhPLbG0"
+            alt="logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Rick And Morty API
+        </a>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center align-items-center p-2">
+      <form id="search">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control mb-2"
+          placeholder="Character Name"
+        />
+        <button type="submit" class="btn btn-dark w-100">Search</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
