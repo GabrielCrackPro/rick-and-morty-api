@@ -29,7 +29,9 @@ npm run dev
   - [x] Image
   - [x] Name
   - [x] Specie
-  - [x] Current life status
+  - [x] Current life status - Alive/Dead/Unknown
   - [x] First apparition
-- [ ] Get episodes data
 - [x] Add pagination - Show more characters
+- [ ] Add episodes page
+- [ ] Add locations page
+- [ ] Add animations
