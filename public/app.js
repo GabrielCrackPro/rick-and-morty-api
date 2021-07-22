@@ -1,7 +1,11 @@
-const CHARACTERS_URL = "https://rickandmortyapi.com/api/character";
-const EPISODES_URL = "https://rickandmortyapi.com/api/episode";
-let episodesArray = [];
+let actualPage = 1;
+
+let CHARACTERS_URL = `https://rickandmortyapi.com/api/character/?page=${actualPage}`;
+let EPISODES_URL = "https://rickandmortyapi.com/api/episode";
+
 const charactersContainer = document.querySelector(".character-container");
+const nextPageButton = document.querySelector(".next-btn");
+const prevoiusPageButton = document.querySelector(".previous-btn");
 
 const getData = async () => {
   let data = await fetch(CHARACTERS_URL).then((response) => response.json());
@@ -12,13 +16,8 @@ const getEpisodes = async () => {
   return data.results;
 };
 const showCharacters = async () => {
-  await getEpisodes().then((episodes) => {
-    episodes.forEach((episode) => episodesArray.push(episode));
-    console.log(episodesArray);
-  });
   await getData().then((data) => {
     const characters = data.results;
-    console.log(characters[0]);
     characters.forEach((character) => {
       charactersContainer.innerHTML += `
         <div class="character-container d-flex p-4 border-bottom border-3" id="${character.id}">
@@ -34,4 +33,22 @@ const showCharacters = async () => {
   });
 };
 
+nextPageButton.addEventListener("click", () => {
+  actualPage += 1;
+  CHARACTERS_URL = `https://rickandmortyapi.com/api/character/?page=${actualPage}`;
+  charactersContainer.innerHTML = "";
+  showCharacters();
+});
+
+if (actualPage === 1) {
+  prevoiusPageButton.classList.add("disabled");
+}
+prevoiusPageButton.addEventListener("click", () => {
+  if (actualPage > 1) {
+    actualPage -= 1;
+    CHARACTERS_URL = `https://rickandmortyapi.com/api/character/?page=${actualPage}`;
+    charactersContainer.innerHTML = "";
+    showCharacters();
+  }
+});
 window.onload = showCharacters;
