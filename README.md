@@ -25,11 +25,11 @@ npm run dev
 ## TODO
 
 - [x] Find valid <a href="https://rickandmortyapi.com" target="blank">Rick And Morty API</a>
-- [ ] Get characters data
+- [x] Get characters data
   - [x] Image
   - [x] Name
   - [x] Specie
-  - [ ] Current life status
-  - [ ] First apparition
+  - [x] Current life status
+  - [x] First apparition
 - [ ] Get episodes data
 - [x] Add pagination - Show more characters
