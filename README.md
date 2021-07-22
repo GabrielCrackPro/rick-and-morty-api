@@ -32,4 +32,4 @@ npm run dev
   - [ ] Current life status
   - [ ] First apparition
 - [ ] Get episodes data
-- [ ] Add pagination - Show more characters
+- [x] Add pagination - Show more characters
