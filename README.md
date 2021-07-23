@@ -34,7 +34,9 @@ npm run dev
   - [x] Name
   - [x] Specie
   - [x] Current life status - Alive/Dead/Unknown
-  - [x] First apparition
+  - [x] Aparitions
+    - [x] First
+    - [x] All
 - [x] Add pagination - Show more characters
 - [ ] Add episodes page
 - [ ] Add locations page
