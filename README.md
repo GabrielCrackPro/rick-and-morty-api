@@ -38,7 +38,8 @@ npm run dev
     - [x] First
     - [x] All
 - [x] Add pagination - Show more characters
-- [ ] Add episodes page
+- [x] Add episodes page
+- [ ] Fix navbar links
 - [ ] Add locations page
 - [ ] Add animations
 - [x] Deploy 🌏 - <a href="http://rickandmorty-api.surge.sh/" target="blank">here</a>
