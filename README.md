@@ -41,4 +41,4 @@ npm run dev
 - [ ] Add episodes page
 - [ ] Add locations page
 - [ ] Add animations
-- [ ] Deploy 🌏
+- [x] Deploy 🌏 - <a href="http://rickandmorty-api.surge.sh/" target="blank">here</a>
