@@ -35,6 +35,9 @@ const showCharacters = async () => {
         <h3><span class="fw-bold">Last Known Location:</span> ${
           character.location.name
         }</h3> 
+        <h3><span class="fw-bold">Appears in</span> ${
+          character.episode.length
+        } episodes</h3> 
         <h3><span class="fw-bold">Origin:</span> ${character.origin.name}</h3> 
         <h3><span class="fw-bold">Inserted  At:</span> ${new Date(
           character.created
