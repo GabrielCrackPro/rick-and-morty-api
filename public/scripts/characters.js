@@ -2,7 +2,6 @@ let actualPage = 1;
 let pagesLimit = 34;
 
 let CHARACTERS_URL = `https://rickandmortyapi.com/api/character/?page=${actualPage}`;
-let EPISODES_URL = "https://rickandmortyapi.com/api/episode";
 
 const charactersContainer = document.querySelector(".character-container");
 const nextPageButton = document.querySelector(".next-btn");
@@ -12,10 +11,6 @@ const pageCounter = document.querySelector(".page-counter");
 const getData = async () => {
   let data = await fetch(CHARACTERS_URL).then((response) => response.json());
   return data;
-};
-const getEpisodes = async () => {
-  let data = await fetch(EPISODES_URL).then((response) => response.json());
-  return data.results;
 };
 const showCharacters = async () => {
   await getData().then((data) => {
