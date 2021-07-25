@@ -53,7 +53,7 @@ prevoiusPageButton.addEventListener("click", () => {
     actualPage -= 1;
     EPISODES_URL = `https://rickandmortyapi.com/api/character/?page=${actualPage}`;
     episodesContainer.innerHTML = "";
-    showCharacters();
+    showEpisodes();
     pageCounter.innerHTML = `Page ${actualPage} of ${pagesLimit}`;
   }
 });

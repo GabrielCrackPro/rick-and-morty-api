@@ -14,3 +14,6 @@ img {
   position: absolute;
   transform: scale(0.4);
 }
+.white {
+  color: #fff;
+}
