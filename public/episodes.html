@@ -31,20 +31,45 @@
     <title>Rick And Morty API | Episodes</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a a class="navbar-brand" href="index.html">
           <img
             src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a46868a6-3de3-4c82-b291-dcc524c1a7a7/d9mxrw7-a76a3243-56ed-4314-8dcd-ded2078dc26b.png/v1/fill/w_1024,h_1186,q_75,strp/rick_face_by_kushmastafresh-d9mxrw7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hNDY4NjhhNi0zZGUzLTRjODItYjI5MS1kY2M1MjRjMWE3YTcvZDlteHJ3Ny1hNzZhMzI0My01NmVkLTQzMTQtOGRjZC1kZWQyMDc4ZGMyNmIucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTExODYifV1dfQ.GLT_W4ioLbl4M2nMIZYgjx0eQLnREfp6Ty7eQhPLbG0"
             alt="logo"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top"
+            height="50"
+            width="50"
           />
           Rick And Morty API
         </a>
-        <a href="locations.html" class="white">Locations</a>
-        <a href="episodes.html" class="white">Episodes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="episodes.html">Episodes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/GabrielCrackPro/rick-and-morty-api"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="episodes-container"></div>
