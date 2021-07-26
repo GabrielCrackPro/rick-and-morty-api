@@ -15,12 +15,12 @@ const showLocations = async () => {
   let data = await getData();
   let parsedLocations = data.results;
   parsedLocations.forEach((location) => {
+    if (location.dimension === undefined) location.dimension = "unknown";
     locationsContainer.innerHTML += `
     <div class="location-container p-4 border-bottom border-3" id="${location.id}">
     <h1 class="location-name">${location.name} - #${location.id}</h1>
     <h2 class="location-type">Type: ${location.type}</h2>
     <h2 class="location-dimension">Dimension: ${location.dimension}</h2>
-    <h2 class="location-residents">${location.residents.length} character reside</h2>
     <a href="${location.url}" class="btn btn-dark btn-sm">JSON Format</a>
     </div>
     `;

@@ -15,7 +15,6 @@ const getData = async () => {
 const showCharacters = async () => {
   await getData().then((data) => {
     const characters = data.results;
-    console.log(characters[0]);
     characters.forEach((character) => {
       charactersContainer.innerHTML += `
         <div class="character-container d-flex p-4 border-bottom border-3" id="${
